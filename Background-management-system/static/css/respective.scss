@@ -1,0 +1,408 @@
+/////////////////////////////////////////////////////数据库管理中心
+//数据库信息
+#database-dataInformation{
+	.content-body{
+		.lis{
+			padding-left: 580px;
+		}
+		.total{
+			position:absolute;
+			right: 620px;
+			width: 580px;
+			text-align: right;
+			height: 100%;
+			line-height: 55px;
+		}
+		.tiao-box{
+			width: 205px;
+			height: 37px;
+			position:relative;
+			padding-top:25px;
+			padding-right:50px;
+			left: -80px;
+			.bg{
+				background:#444444;
+				height: 100%;
+			}
+			.mask{
+				position:absolute;
+				top:25px;
+				height: 37px;
+				background:#89c997;
+				color:#fff;
+				text-align: center;
+				overflow: hidden;
+				line-height: 32px;
+				font-size: 12px;
+				transition: width .25s ease-in-out;
+				width: 0;
+			}
+			.top{
+				position: absolute;
+				top:0;
+				left: 0;
+			}
+			.right{
+				position:absolute;
+				top: 25px;
+				height: 37px;
+				line-height: 37px;
+				right: 0;
+			}
+		}
+	}
+}
+//数据库管理
+#database-dataManagement{
+	.content-body{
+		padding-top:100px;
+		padding-bottom: 360px;
+		a{
+			display: block;
+			height: 100%;
+		}
+		li{
+			position:relative;
+			height: 115px;
+			h4{
+				position:absolute;
+				bottom:0;
+				text-align: center;
+				width: 100%;
+			}
+		}
+		.icon{
+			margin:0 auto;
+		}
+		.img1{
+			width: 39px;
+			height: 55px;
+			background-position: 0 -30px;
+		}
+		.img2{
+			width: 61px;
+			height: 55px;
+			background-position:-70px -30px;
+		}
+		.img3{
+			width: 43px;
+			height: 57px;
+			background-position:-140px -30px;
+		}
+		.img4{
+			width: 56px;
+			height: 55px;
+			background-position:-210px -30px;
+		}
+		.img5{
+			width: 44px;
+			height: 56px;
+			background-position:-280px -30px;
+		}
+		.img6{
+			width: 64px;
+			height: 56px;
+			background-position:-350px -30px;
+		}
+	}
+}
+//修改数据库密码
+#database-editPassword{
+	.content-body{
+		.lis{
+			height: 58px;
+			line-height: 58px;
+			padding-left:530px;
+		}
+		.total{
+			position:absolute;
+			right: 670px;
+			width: 230px;
+			text-align: right;
+			height: 100%;
+			line-height: 55px;
+		}
+		input{
+			width: 193px;
+			height: 33px;
+			border:1px solid #c4c4c4; 
+			padding-left: 5px;
+			font-size: 14px;
+		}
+		.mmts{
+			color: #b3b3b3;
+			font-size: 14px;
+
+		}
+		.mmtsf{
+			line-height: 25px;
+			height: 25px;
+		}
+		.button{
+			margin-top: 35px;
+			width: 130px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			color:#fff;
+			background:#5c91e6;
+			font-size: 14px;
+			display: block;
+			border-radius: 3px;
+		}
+		.button-box{
+			margin-bottom: 40px;
+		}
+		.content-ts{
+			padding-left:430px;
+		}
+	}
+}
+//数据库备份还原
+#database-backupAreduction{
+	.form{
+		width: 819px;
+		border-top:1px solid #efefef;
+		border-left:1px solid #efefef;
+		margin: 50px auto;
+		.top{
+			border-right:1px solid #efefef;
+			border-bottom:1px solid #efefef;
+			background:#f5f9fa;
+			height: 38px;
+			line-height: 38px;
+			text-align: center;
+			h3{
+				float: left;
+				width: 200px;
+				font-size: 14px;
+			}
+			p{
+				float: left;
+				width: 599px;
+				span{
+					font-size: 14px;
+				}
+				span+span{
+					margin-left: 20px;
+				}
+			}
+		}
+		li{
+			float:left;
+			border-right:1px solid #efefef;
+			border-bottom: 1px solid #efefef;
+			text-align: center;
+			line-height: 50px;
+			height: 50px;
+			font-size: 14px;
+		}
+		.row1{
+			width: 200px;
+		}
+		.row2{
+			width: 200px;
+		}
+		.row3{
+			width: 200px;
+			span{
+				font-size: 14px;
+				padding-left:20px;
+				position:relative;
+				color:#5c91e6;
+				cursor: pointer;
+				.icon{
+					width: 14px;
+					height: 14px;
+					background-position:-122px 0;
+					position:absolute;
+					left: 0;
+					top: 4px;
+				}
+			}
+		}
+		.row4{
+			width: 215px;
+			span{
+				font-size: 14px;
+				padding-left:25px;
+				position:relative;
+				color:#b3b3b3;
+				.icon{
+					width: 17px;
+					height: 14px;
+					background-position:-141px 0;
+					position:absolute;
+					left: 0;
+					top: 4px;
+				}
+			}
+			span.shue{
+				color: #50ac49;
+				cursor: pointer;
+				.icon{
+					background-position:-200px 0;
+				}
+			}
+		}
+	}
+	.form.form2{
+		.top{
+			p{
+				text-align: left;
+				padding-left:225px;
+				width: auto;
+			}
+		}
+		.row-left{
+			width: 200px;
+		}
+		.row-right{
+			width: 617px;
+		}
+		.last{
+			span{
+				font-size: 14px;
+			}
+			.xyd{
+				padding-left:20px;
+				position:relative;
+				cursor: pointer;
+				color:#5c91e6;
+				.icon{
+					position:absolute;
+					background-position:-169px 0;
+					width: 14px;
+					height: 14px;
+					left: 0;
+					top: 4px;
+				}
+			}
+		}
+	}
+	.content-ts{
+		padding-left:285px;
+		.red{
+			color: #e2383a;
+		}
+	}
+}
+//设置远程访问IP
+#database-accessIP{
+	.floor{
+		h3{
+			height: 35px;
+			line-height: 35px;
+			padding-left:30px;
+			padding-top:17px;
+		}
+		.lis{
+			padding-left:600px;
+			height: 55px;
+			line-height: 55px;
+			position:relative;
+			.total{
+				position:absolute;
+				right: 600px;
+				width: 600px;
+				height: 55px;
+				line-height: 55px;
+				text-align: right;
+			}
+			input{
+				width: 195px;
+				height: 33px;
+				border:1px solid #c4c4c4;
+				padding-left:5px;
+			}
+		}
+	}
+	.floor2{
+		border-top:1px solid #efefef;
+		.lis{
+			padding-left:537px;
+			.total{
+				width: 537px;
+				right: 660px;
+			}
+		}
+	}
+	.button-box{
+		margin-top: 30px;
+		padding-bottom:60px;
+		a{
+			width: 130px;
+			height: 40px;
+			background:#5c91e6;
+			color:#fff;
+			text-align: center;
+			line-height: 40px;
+			display: block;
+			border-radius:3px;
+		}
+		a:active{
+			background: #507fcb;
+		}
+	}
+	.content-ts{
+		padding-left:500px;
+	}
+}
+//清空数据库
+#database-emptydata{
+	.content-body{
+		.img{
+			padding-top: 60px;
+			padding-bottom:45px;
+			.icon{
+				margin: 0 auto;
+				width: 112px;
+				height: 120px;
+				background-position:-13px -158px;
+			}
+		}
+		h3,p{
+			text-align: center;
+		}
+		.button-box{
+			padding:60px 0;
+			a{
+				width: 130px;
+				height: 40px;
+				background:#5c91e6;
+				color:#fff;
+				text-align: center;
+				line-height: 40px;
+				display: block;
+				border-radius:3px;
+				margin: 0 auto;
+			}
+			a:active{
+				background: #507fcb;
+			}
+		}
+		.content-ts{
+			padding-left:480px;
+			h3,p{
+				text-align: left;
+			}
+		}
+		.content-ts.emptylog{
+			padding-left:350px;
+			span{
+				color:#b3b3b3;
+				position:absolute;
+				top:0;
+				left: 0;
+			}
+			h3,p{
+				text-align: left;
+			}
+			p{
+				padding-left:40px;
+				width: 465px;
+				position:relative;
+			}
+		}
+	}
+}
