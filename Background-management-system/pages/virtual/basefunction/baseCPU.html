@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>虚拟主机管理中心-网站流量及CPU使用情况</title>
+	<link rel="stylesheet" href="../../../static/css/public.css">
+	<link rel="stylesheet" href="../../../static/css/respective.css">
+	<script src="../../../static/js/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../../../static/js/jsapi.js"></script>
+	<script type="text/javascript" src="../../../static/js/corechart.js"></script>		
+	<script type="text/javascript" src="../../../static/js/jquery.gvChart-1.0.1.min.js"></script>
+	<script type="text/javascript" src="../../../static/js/jquery.ba-resize.min.js"></script>
+</head>
+<body>
+	<div id="baseCPU" class="samepage virtual">
+		<div class="center">
+			<div class="title">
+				<h1>虚拟主机管理中心</h1>
+			</div>
+			<div class="nav no-float">
+				<a href="javascript:;" class="nav-row4">
+					<span>虚拟主机信息<i class="icon n1"></i></span>
+				</a>
+				<a href="./virtual-base.html" class="nav-row4 now" >
+					<span>网站基础功能<i class="icon n2"></i></span>
+				</a>
+				<a href="../website/virtual-websiteAdvanced.html" class="nav-row4" >
+					<span>网站高级功能<i class="icon n3"></i></span>
+				</a>
+				<a href="javascript:;" class="nav-row4" >
+					<span>网站其他管理<i class="icon n4"></i></span>
+				</a>
+			</div>
+			<div class="content">
+				<div class="content-head no-float">
+					<a href="#" class="pop-center">Ry658.vip</a>
+					<span>您好，欢迎登录虚拟主机管理中心</span>
+					<a href="#" class="exit">安全退出<i class="icon"></i></a>
+				</div>
+				<h2>基础功能 <span class="icon"></span> 网站流量及CPU使用情况</h2>
+				<div class="content-body">
+					<div class="floor floor1">
+						<h3>流量使用情况</h3>
+						<div class="lis">
+							<span class="total">昨日总流量：</span>
+							<span class="bind">0.0M</span>
+						</div>
+						<div class="lis">
+							<span class="total">昨日流入总流量：</span>
+							<span class="bind">0.0M</span>
+						</div>
+						<div class="lis">
+							<span class="total">昨日流出总流量：</span>
+							<span class="bind">0.0M</span>
+						</div>
+						<div class="lis">
+							<span class="total">本月流量使用情况：</span>
+							<span class="bind">0.0M/6000.0M</span>
+						</div>
+						<div class="lis">
+							<span class="total">使用率：</span>
+							<span class="bind">0.00%</span>
+						</div>
+					</div>
+					<div class="floor floor2">
+						<h3>CPU使用情况</h3>
+						<div class="lis">
+							<span class="total">昨日使用CPU：</span>
+							<span class="bind">25.00%</span>
+						</div>	
+						<div class="lis">
+							<span class="total">CPU上限：</span>
+							<span class="bind">无限制</span>
+						</div>	
+						<div class="lis">
+							<span class="total">CPU总使用率：</span>
+							<span class="bind">0.00%</span>
+						</div>					
+						 <table id='myTable5' style="position: absolute;left: 315px;top:80px;">
+							<thead>
+								<tr>
+									<th></th>
+									<th>未使用</th>
+									<th>昨日使用率</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>100</th>
+									<td>75</td>
+									<td>25</td>
+								</tr>
+							</tbody>
+						</table>  
+					</div>
+				</div>
+			</div>
+			<div class="bottom"><p>Copyright © 数据库控制管理中心 All Rights Reserved.</p></div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+<script>
+	gvChartInit();
+</script>
+<script src="../../../static/js/public.js"></script>

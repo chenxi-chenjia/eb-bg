@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>虚拟主机管理中心-高级功能-自定义MIME类型</title>
+	<link rel="stylesheet" href="../../../static/css/public.css">
+	<link rel="stylesheet" href="../../../static/css/respective.css">
+	<script src="../../../static/js/jquery.min.js"></script>
+</head>
+<body>
+	<div id="virtual-mime" class="samepage virtual">
+		<div class="center">
+			<div class="title">
+				<h1>虚拟主机管理中心</h1>
+			</div>
+			<div class="nav no-float">
+				<a href="javascript:;" class="nav-row4">
+					<span>虚拟主机信息<i class="icon n1"></i></span>
+				</a>
+				<a href="../basefunction/virtual-base.html" class="nav-row4" >
+					<span>网站基础功能<i class="icon n2"></i></span>
+				</a>
+				<a href="./virtual-websiteAdvanced.html" class="nav-row4 now" >
+					<span>网站高级功能<i class="icon n3"></i></span>
+				</a>
+				<a href="javascript:;" class="nav-row4" >
+					<span>网站其他管理<i class="icon n4"></i></span>
+				</a>
+			</div>
+			<div class="content">
+				<div class="content-head no-float">
+					<a href="#" class="pop-center">Ry658.vip</a>
+					<span>您好，欢迎登录虚拟主机管理中心</span>
+					<a href="#" class="exit">安全退出<i class="icon"></i></a>
+				</div>
+				<h2>高级功能 <span class="icon"></span> 自定义MIME类型</h2>
+				<div class="content-body">
+					<div class="floor1">
+						<ul>
+							<li class="lis">
+								<span class="total">扩展名：</span>
+								<select name="" id="">
+									<option value="1">.txt</option>
+									<option value="2">.rmvb</option>
+									<option value="3">.html或htm</option>
+									<option value="4">.gif</option>
+									<option value="4">自定义</option>
+								</select>
+								<span class="ts"><b>*</b>常用的扩展名：如.rmvb</span>
+							</li>
+
+							<li class="lis">
+								<span class="total">Mime类型：</span>
+								<span class="bind">text/plain</span>
+								<span class="ts"><b>*</b>常用的扩展名：如.rmvb</span>
+							</li>
+							<li class="lis button">
+								<a href="javascript:;">确定设置</a>
+							</li>
+						</ul>
+						<div class="floor1-ts">
+							<p><<自定义修改MIME类型,:设定某种扩展名的文件用一种应用程序来打开的方式类型，当该扩展名文件被访问的时候，浏览器会自动使用指定应用程序来打开。</p>
+						</div>
+					</div>
+					<div class="floor2">
+						<h3>常用的Mime类型：</h3>
+						<div class="form">
+							<div class="top no-float">
+								<h4 class="row1">拓展名</h4>
+								<h4 class="row2">Mime类型</h4>
+								<h4 class="row3">说明</h4>
+							</div>
+							<ul class="no-float">
+								<li class="row1">.txt</li>
+								<li class="row2">text/plain</li>
+								<li class="row3">普通文本</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.html或.htm</li>
+								<li class="row2">text/html</li>
+								<li class="row3">超文本标记语言文本</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.ref</li>
+								<li class="row2">application/rtf</li>
+								<li class="row3">RTF文本</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.gif</li>
+								<li class="row2">image/gif</li>
+								<li class="row3">GIF图形</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.jpeg或.jpg</li>
+								<li class="row2">image/jpeg</li>
+								<li class="row3">JPEG图形</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.au</li>
+								<li class="row2">audio/basic</li>
+								<li class="row3">AU声音文件</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.mid或.midi</li>
+								<li class="row2">audio/midi或audio/x-midi</li>
+								<li class="row3">MIDI音乐文件</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.ra或.ram或.rm</li>
+								<li class="row2">audio/x-pn-realaudio</li>
+								<li class="row3">RealAudio音乐文件</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.mpg或.mpog或.mp3</li>
+								<li class="row2">video/mpeg</li>
+								<li class="row3">MPEG文件</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.avi</li>
+								<li class="row2">video/x-msvideo</li>
+								<li class="row3">AVI文件</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.gz</li>
+								<li class="row2">application/x-gzip</li>
+								<li class="row3">GZIP文件</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.tar</li>
+								<li class="row2">application/x-tar</li>
+								<li class="row3">TAR文件</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.exe</li>
+								<li class="row2">application/octet-stream</li>
+								<li class="row3">可执行文件</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.rmvb</li>
+								<li class="row2">video/vnd.rn-realvideo</li>
+								<li class="row3">RealMedia视频文件</li>
+							</ul>
+							<ul class="no-float">
+								<li class="row1">.flv</li>
+								<li class="row2">video/x-flv</li>
+								<li class="row3">Flash视频</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="bottom"><p>Copyright © 数据库控制管理中心 All Rights Reserved.</p></div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+<script src="../../../static/js/public.js"></script>

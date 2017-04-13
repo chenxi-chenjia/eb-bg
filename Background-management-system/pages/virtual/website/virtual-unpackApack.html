@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>虚拟主机管理中心-高级功能-解压/压缩</title>
+	<link rel="stylesheet" href="../../../static/css/public.css">
+	<link rel="stylesheet" href="../../../static/css/respective.css">
+	<script src="../../../static/js/jquery.min.js"></script>
+</head>
+<body>
+	<div id="virtual-unpackApack" class="samepage virtual">
+		<div class="center">
+			<div class="title">
+				<h1>虚拟主机管理中心</h1>
+			</div>
+			<div class="nav no-float">
+				<a href="javascript:;" class="nav-row4">
+					<span>虚拟主机信息<i class="icon n1"></i></span>
+				</a>
+				<a href="../basefunction/virtual-base.html" class="nav-row4" >
+					<span>网站基础功能<i class="icon n2"></i></span>
+				</a>
+				<a href="./virtual-websiteAdvanced.html" class="nav-row4 now" >
+					<span>网站高级功能<i class="icon n3"></i></span>
+				</a>
+				<a href="javascript:;" class="nav-row4" >
+					<span>网站其他管理<i class="icon n4"></i></span>
+				</a>
+			</div>
+			<div class="content">
+				<div class="content-head no-float">
+					<a href="#" class="pop-center">Ry658.vip</a>
+					<span>您好，欢迎登录虚拟主机管理中心</span>
+					<a href="#" class="exit">安全退出<i class="icon"></i></a>
+				</div>
+				<h2>高级功能 <span class="icon"></span> 解压/压缩</h2>
+				<div class="content-body">
+					<div class="packbox box">
+						<div class="lis">
+							将网站<input type="text" name="input" placeholder="\web" class="input" />目录打包成RAR文件，自动放置在DB目录
+						</div>
+						<div class="lis">
+							<span class="pack"><i class="icon"></i>在线压缩</span>
+							<span class="unpack"><i class="icon"></i>在线解压</span>
+							<span class="fj"><input type="checkbox" name="fjdb"><label for="fjdb">分卷打包（每个包50M）</label></span>
+						</div>
+						<div class="lis button">
+							<a href="javascript:;">马上压缩</a>
+						</div>
+						<div class="content-ts">
+							<h3>温馨提醒：</h3>
+							<p><span>[1]</span>您可以通过我司提供的在线压缩功能将指定的目录或文件打包，然后您可以通过ftp直接下载到本地。方便您对网站的文件进行管理。</p>
+							<p><span>[2]</span>如果您的文件较大，压缩需要一段时间才可完成，命令发送成功后您需要等一段再去下载(您可以用ftp登录观察压缩文件5分钟之内大小有没有变化)。10M文件大概需要3分钟时间。</p>
+							<p><span>[3]</span>若是Linux/JAVA主机，只有压缩完毕后系统才会返回成功，若数据量较大期间有可能出现页面长时间没响应或脚本超时。这时候请自行用FTP登录空间查看压缩是否成功。</p>
+						</div>
+					</div>
+					<div class="box unpack-box">
+						<div class="lis">
+							将web目录的<input type="text" name="input" class="input" />（.rar或者.zip文件）解压到<input type="text" name="ml" class="input">目录中
+						</div>
+						<div class="lis">
+							<span class="pack"><i class="icon"></i>在线压缩</span>
+							<span class="unpack"><i class="icon"></i>在线解压</span>
+						</div>
+						<div class="lis button">
+							<a href="javascript:;">马上压缩</a>
+						</div>
+						<div class="content-ts">
+							<h3>温馨提醒：</h3>
+							<p><span>[1]</span>您可以将要上传的本地文件用“WinRAR”进行压缩后再上传到网站上，然后通过本功能在线解压缩即可。这样可以大大节省您的上传时间。</p>
+							<p><span>[2]</span>您必须先通过FTP上传您的压缩文件至站点的指定目录下，才可以进行在线解压。</p>
+							<p><span>[3]</span>带有密码保护的压缩文件无法解压缩。</p>
+							<p><span>[4]</span>压缩文件名不支持_等特殊字符。</p>
+							<p><span>[5]</span>Windows支持RAR和ZIP压缩格式。Linux虚拟主机支持zip,tar.gz.,rar格式的压缩文件。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom"><p>Copyright © 数据库控制管理中心 All Rights Reserved.</p></div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+<script src="../../../static/js/public.js"></script>

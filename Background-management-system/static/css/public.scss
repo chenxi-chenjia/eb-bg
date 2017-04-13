@@ -7,6 +7,9 @@ div,p,span,li,dd,dt,b,i,del,a{
 	font-size:16px;
 	color:#444;
 }
+input{
+	font-size:14px;
+}
 img{
 	border:0;
 }
@@ -41,6 +44,24 @@ ul,li,dd,dt,dl{
 }
 input,select,option{
 	outline:none;
+}
+/* WebKit browsers */
+::-webkit-input-placeholder {
+	color: #b3b3b3;
+}
+/* Mozilla Firefox 4 to 18 */
+:-moz-placeholder {
+	color: #b3b3b3;
+	opacity: 1;
+}
+/* Mozilla Firefox 19+ */
+::-moz-placeholder {
+	color: #b3b3b3;
+	opacity: 1;
+}
+/* Internet Explorer 10+ */
+:-ms-input-placeholder {
+	color: #b3b3b3;
 }
 //混合宏定义
 @mixin nofloat{
@@ -87,6 +108,21 @@ input,select,option{
 .font-center{
 	text-align:center;
 }
+.button{
+	a{
+		width: 130px;
+		height: 40px;
+		background:#5c91e6;
+		color:#fff;
+		text-align: center;
+		line-height: 40px;
+		display: block;
+		border-radius:3px;
+	}
+	a:active{
+		background: #507fcb;
+	}
+}
 .samepage{
 	.title{
 		h1{
@@ -97,7 +133,7 @@ input,select,option{
 	}
 	.nav{
 		background:#2f3a47;
-		.nav-row2{
+		a{
 			height: 80px;
 			line-height:80px;
 			text-align:center;
@@ -133,7 +169,6 @@ input,select,option{
 	.content{
 		background:#fff;
 		margin-top: 50px;
-		padding-bottom:50px;
 		.content-head{
 			height: 80px;
 			line-height: 80px;
@@ -178,9 +213,20 @@ input,select,option{
 			line-height: 48px;
 			background:#f5f9fa;
 			padding-left:30px;
-			border:1px solid #efefef;
+			border-top:1px solid #efefef;
+			border-bottom:1px solid #efefef;
+			.icon{
+				width: 6px;
+				height: 10px;
+				background-position:0 -89px;
+				margin: 0 5px;
+				display: inline-block;
+				*position:relative;
+				*top:-5px;
+			}
 		}
 		.content-body{
+			padding:50px 0;
 			.lis{
 				position:relative;
 			}
@@ -202,6 +248,14 @@ input,select,option{
 				line-height: 25px;
 				color:#b3b3b3;
 				font-size: 14px;
+				position:relative;
+				padding-left:25px;
+				span{
+					color:#b3b3b3;
+					position:absolute;
+					top:0;
+					left: 0;
+				}
 			}
 			h3{
 				height: 40px;
@@ -215,6 +269,41 @@ input,select,option{
 			height: 50px;
 			text-align: center;
 			color:#838fa3;
+		}
+	}
+}
+.samepage.virtual{
+	input{
+		line-height: 33px;
+	}
+	.nav{
+		.n1{
+			background-position:-228px 0;
+			width: 20px;
+			height: 17px;
+			top: 3px;
+			left: -3px;
+		}
+		.n2{
+			background-position:-254px 0;
+			width: 22px;
+			height: 18px;
+			top: 3px;
+			left: -3px;
+		}
+		.n3{
+			background-position:-280px 0;
+			width: 22px;
+			height: 18px;
+			top: 3px;
+			left: 0;
+		}
+		.n4{
+			background-position:-308px 0;
+			width: 18px;
+			height: 18px;
+			top: 4px;
+			left: 2px;
 		}
 	}
 }

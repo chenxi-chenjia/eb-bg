@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>虚拟主机管理中心-高级功能-自定义出错页</title>
+	<link rel="stylesheet" href="../../../static/css/public.css">
+	<link rel="stylesheet" href="../../../static/css/respective.css">
+	<script src="../../../static/js/jquery.min.js"></script>
+</head>
+<body>
+	<div id="virtual-errorpage" class="samepage virtual">
+		<div class="center">
+			<div class="title">
+				<h1>虚拟主机管理中心</h1>
+			</div>
+			<div class="nav no-float">
+				<a href="javascript:;" class="nav-row4">
+					<span>虚拟主机信息<i class="icon n1"></i></span>
+				</a>
+				<a href="../basefunction/virtual-base.html" class="nav-row4" >
+					<span>网站基础功能<i class="icon n2"></i></span>
+				</a>
+				<a href="./virtual-websiteAdvanced.html" class="nav-row4 now" >
+					<span>网站高级功能<i class="icon n3"></i></span>
+				</a>
+				<a href="javascript:;" class="nav-row4" >
+					<span>网站其他管理<i class="icon n4"></i></span>
+				</a>
+			</div>
+			<div class="content">
+				<div class="content-head no-float">
+					<a href="#" class="pop-center">Ry658.vip</a>
+					<span>您好，欢迎登录虚拟主机管理中心</span>
+					<a href="#" class="exit">安全退出<i class="icon"></i></a>
+				</div>
+				<h2>高级功能 <span class="icon"></span> 自定义出错页</h2>
+				<div class="content-body">
+					<div class="floor">
+						<h3>自定义404出错页</h3>
+						<ul class="no-float">
+							<li><input type="radio" name="f1" value="1" checked><label for="1">使用系统默认的404（找不大文件时）出错页</label></li>
+							<li><input type="radio" name="f1" value="2"><label for="2">使用web目录中的404.asp文件来自定义内容</label></li>
+							<li><input type="radio" name="f1" value="3"><label for="3">使用web目录中的404.php文件来自定义内容</label></li>
+							<li><input type="radio" name="f1" value="4"><label for="4">使用web目录中的404.htm文件来自定义内容</label></li>
+						</ul>
+						<div class="button">
+							<a href="javascript:;">确定修改</a>
+						</div>
+					</div>
+					<div class="floor">
+						<h3>自定义404出错页</h3>
+						<ul class="no-float">
+							<li><input type="radio" name="f2" value="1" checked><label for="1">使用系统默认的404（找不大文件时）出错页</label></li>
+							<li><input type="radio" name="f2" value="2"><label for="2">使用web目录中的404.asp文件来自定义内容</label></li>
+							<li><input type="radio" name="f2" value="3"><label for="3">使用web目录中的404.php文件来自定义内容</label></li>
+							<li><input type="radio" name="f2" value="4"><label for="4">使用web目录中的404.htm文件来自定义内容</label></li>
+						</ul>
+						<div class="button">
+							<a href="javascript:;">确定修改</a>
+						</div>
+					</div>
+					<div class="floor">
+						<h3>自定义404出错页</h3>
+						<ul class="no-float">
+							<li><input type="radio" name="f3" value="1" checked><label for="1">使用系统默认的404（找不大文件时）出错页</label></li>
+							<li><input type="radio" name="f3" value="2"><label for="2">使用web目录中的404.asp文件来自定义内容</label></li>
+							<li><input type="radio" name="f3" value="3"><label for="3">使用web目录中的404.php文件来自定义内容</label></li>
+							<li><input type="radio" name="f3" value="4"><label for="4">使用web目录中的404.htm文件来自定义内容</label></li>
+						</ul>
+						<div class="button">
+							<a href="javascript:;">确定修改</a>
+						</div>
+					</div>
+					<div class="content-ts">
+						<h3>温馨提示：</h3>
+						<p><span>[1]</span>当用浏览器访问您的网站出错时，服务器会根据不同的错误代码给用户反馈相关的信息。如文件未找到404,内部服务器错误500等，当您设置自定义错误页面后，浏览器将会访问您设置的错误页面。</p>
+						<p><span>[2]</span>常见的错误页面是：</p>
+						<p class="y">404：文件未找到的错误提示。</p>
+						<p class="y">400：错误的HTTP请求。</p>
+						<p class="y">500：系统忙。</p>
+						<p><span>[3]</span>您可以上传自定义的错误页面文件至您的web目录下，并按要求设置文件名即可。</p>
+						<p><span>[4]</span>Linux主机暂不支持</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="bottom"><p>Copyright © 数据库控制管理中心 All Rights Reserved.</p></div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+<script src="../../../static/js/public.js"></script>
+<script>
+	$('.f1').on('click','label',function() {
+		// console.log($(this).closest('ul').find('input:checked').get(0))
+		$(this).closest('ul').find('input:checked').removeAttr('checked').get(0).checked=false;
+		$(this).closest('li').find('input').attr('checked','checked').get(0).checked=true;
+		
+	})
+</script>

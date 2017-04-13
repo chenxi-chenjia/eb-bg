@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>虚拟主机管理中心-高级功能-网络搬家</title>
+	<link rel="stylesheet" href="../../../static/css/public.css">
+	<link rel="stylesheet" href="../../../static/css/respective.css">
+	<script src="../../../static/js/jquery.min.js"></script>
+</head>
+<body>
+	<div id="virtual-networkmove" class="samepage virtual">
+		<div class="center">
+			<div class="title">
+				<h1>虚拟主机管理中心</h1>
+			</div>
+			<div class="nav no-float">
+				<a href="javascript:;" class="nav-row4">
+					<span>虚拟主机信息<i class="icon n1"></i></span>
+				</a>
+				<a href="../basefunction/virtual-base.html" class="nav-row4" >
+					<span>网站基础功能<i class="icon n2"></i></span>
+				</a>
+				<a href="./virtual-websiteAdvanced.html" class="nav-row4 now" >
+					<span>网站高级功能<i class="icon n3"></i></span>
+				</a>
+				<a href="javascript:;" class="nav-row4" >
+					<span>网站其他管理<i class="icon n4"></i></span>
+				</a>
+			</div>
+			<div class="content">
+				<div class="content-head no-float">
+					<a href="#" class="pop-center">Ry658.vip</a>
+					<span>您好，欢迎登录虚拟主机管理中心</span>
+					<a href="#" class="exit">安全退出<i class="icon"></i></a>
+				</div>
+				<h2>高级功能 <span class="icon"></span> 网络搬家</h2>
+				<div class="content-body">
+					<ul>
+						<li class="lis">
+							<span class="bind">原服务器IP地址：</span>
+							<input type="text" placeholder="请输入IP地址" class="input">
+							<span class="ts"><b>*</b>原服务器IP/域名，不需要输入http://</span>
+						</li>
+						<li class="lis">
+							<span class="bind">FTP用户名：</span>
+							<input type="text" placeholder="请输入FTP用户名" class="input">
+							<span class="ts"><b>*</b>原服务器的FTP用户名</span>
+						</li>
+						<li class="lis tb">
+							<span class="bind">要下载的目录：</span>
+							<span class="input"></span>
+							<span class="ts"><b>*</b>原服务器IP/域名，不需要输入http://</span>
+						</li>
+						<li class="lis">
+							<span class="bind">保存到的目录：</span>
+							<input type="text" placeholder="\web" class="input">
+							<span class="ts"><b>*</b>存在现在的上虚拟主机的目录</span>
+						</li>
+						<li class="lis">
+							<input type="checkbox" name="ts">
+							<label for="ts">文件搬成功后马上将原服务器上的文件删除，<span>慎重！</span></label>
+						</li>
+						<li class="lis button">
+							<a href="javascript:;">确定搬家</a>
+						</li>
+					</ul>
+					<div class="content-ts">
+						<h3>温馨提醒：</h3>
+						<p><span>[1]</span>您可以使用本功能将另一台服务器上您原有的网站的文件整个复制到您的空间中。</p>
+						<p><span>[2]</span>注意！如果保存到的目录中存在同名的文件会被代替！</p>
+						<p><span>[3]</span>搬家过程中，您可以在/db/ftplog.txt文件中看到整个搬家的命令操作过程。</p>
+					</div>
+				</div>
+			</div>
+			<div class="bottom"><p>Copyright © 数据库控制管理中心 All Rights Reserved.</p></div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+<script src="../../../static/js/public.js"></script>
