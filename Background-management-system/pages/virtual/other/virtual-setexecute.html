@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>虚拟主机管理中心-FTP管理</title>
+	<title>虚拟主机管理中心-设置写入权限</title>
 	<link rel="stylesheet" href="../../../static/css/public.css">
 	<link rel="stylesheet" href="../../../static/css/respective.css">
 	<script src="../../../static/js/jquery.min.js"></script>
 </head>
 <body>
-	<div id="baseFTP" class="samepage virtual">
+	<div id="virtual-setexecute" class="samepage virtual">
 		<div class="center">
 			<div class="title">
 				<h1>虚拟主机管理中心</h1>
@@ -17,13 +17,13 @@
 				<a href="../virtual-information.html" class="nav-row4">
 					<span>虚拟主机信息<i class="icon n1"></i></span>
 				</a>
-				<a href="./virtual-base.html" class="nav-row4 now" >
+				<a href="../basefunction/virtual-base.html" class="nav-row4" >
 					<span>网站基础功能<i class="icon n2"></i></span>
 				</a>
 				<a href="../website/virtual-websiteAdvanced.html" class="nav-row4" >
 					<span>网站高级功能<i class="icon n3"></i></span>
 				</a>
-				<a href="../other/virtual-other.html" class="nav-row4" >
+				<a href="./virtual-other.html" class="nav-row4 now" >
 					<span>网站其他管理<i class="icon n4"></i></span>
 				</a>
 			</div>
@@ -33,30 +33,34 @@
 					<span>您好，欢迎登录虚拟主机管理中心</span>
 					<a href="#" class="exit">安全退出<i class="icon"></i></a>
 				</div>
-				<h2>基础功能 <span class="icon"></span> FTP管理</h2>
+				<h2>其他管理 <span class="icon"></span> 设置写入权限</h2>
+				<div class="content-body">
+					<div class="img">
+						<div class="icon"></div>
+						<h4>写入权限设置</h4>
+					</div>
+					<div class="button">
+						<a href="#">打开写入权限</a>
+						<a href="#">关闭写入权限</a>
+					</div>
+					
+				</div>
+				<h2>子目录写入权限设置</h2>
 				<div class="content-body">
 					<div class="lis">
-						<span class="total">原密码：</span>
-						<input type="text" placeholder="huang8867">
+						在整个网站已锁定的情况下，还可以单独设置以下目录：
+						<input type="text" placeholder="请输入目录名称">
 					</div>
-					<div class="lis">
-						<span class="total">新密码：</span>
-						<input type="passwrod" placeholder="输入新密码">
-					</div>
-					<div class="lis">
-						<span class="total">新密码：</span>
-						<input type="passwrod" placeholder="确认新密码">
-					</div>
-					<div class="lis mmts">
-						<p>密码为8-14位以内的字母和数字</p>
-					</div>
-					<div class="lis button">
-						<a href="javascript:;">确定</a>
+					<div class="button">
+						<a href="#">打开写入权限</a>
+						<a href="#">关闭写入权限</a>
 					</div>
 					<div class="content-ts">
 						<h3>温馨提示：</h3>
-						<p><span>[1]</span>更改了密码后，下一次登录就需要使用新的密码了。</p>
-						<p><span>[2]</span>请保存好您的密码，以免造成不必要的损失。</p>
+						<p><span>[1]</span>本系统支持全国首创的设置，允许关闭写入权限，锁定虚拟主机。</p>
+						<p><span>[2]</span>对安全有重要意义，例如可以将ACCESS放在db目录，</p>
+						<p><span>[3]</span>将web目录的写入关闭，令到ASP木马根本无法上传，这样比关闭FSO更安全。</p>
+						<p><span>[4]</span>请注意，关闭写入权限的同时会令到FTP的上传功能同时关闭。 子目录绑定了域名的网站同时会被锁定</p>
 					</div>
 				</div>
 			</div>

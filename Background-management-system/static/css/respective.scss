@@ -1453,3 +1453,160 @@
 		left: 400px;
 	}
 }
+////////////////////////////////////////////////////////////////////虚拟主机管理中心-网站其他管理
+#virtual-other{
+	.content-body{
+		ul{
+			width: 900px;
+			margin: 0 auto;
+		}
+		a{
+			height: 115px;
+			display: block;
+			position:relative;
+			.icon{
+				margin: 0 auto;
+			}
+			h4{
+				position:absolute;
+				width: 100%;
+				text-align: center;
+				bottom:0;
+				left:0;
+			}
+		}
+		.img1{
+			background-position:0 -612px;
+			width: 49px;
+			height: 55px;
+		}
+		.img2{
+			background-position:-56px -615px;
+			width: 56px;
+			height: 52px;
+		}
+		.img3{
+			background-position:-125px -615px;
+			width: 56px;
+			height: 55px;
+		}
+	}
+}
+#virtual-setip{
+	.lis{
+		padding-left:550px;
+		position:relative;
+		height: 50px;
+		line-height: 50px;
+		.total{
+			position:absolute;
+			width: 550px;
+			height: 100%;
+			line-height: 50px;
+			left: 0;
+			top: 0;
+			text-align: right;
+		}
+		input{
+			width: 200px;
+			height: 33px;
+			border:1px solid #e4e4e4;
+			padding-left:5px;
+		}
+	}
+	.button{
+		margin-top: 45px;
+		padding-bottom:50px;
+	}
+	.content-ts{
+		padding-left:400px;
+	}
+}
+#virtual-setexecute{
+	.img{
+		.icon{
+			width: 100px;
+			height: 114px;
+			background-position:-224px -466px;
+			margin: 0 auto;
+		}
+		h4{
+			font-size: 16px;
+			text-align: center;
+			margin-top: 40px;
+		}
+	}
+	.button{
+		margin-top: 40px;
+		text-align: center;
+		a{
+			display: inline-block;
+			margin:0 10px; 
+		}
+	}
+	.lis{
+		text-align: center;
+		input{
+			width: 200px;
+			padding-left:5px;
+			height: 33px;
+			border:1px solid #e4e4e4;
+		}
+	}
+	.content-ts{
+		margin-top: 50px;
+		padding-left:280px;
+	}
+}
+#virtual-information{
+	.content-body{
+		.lis{
+			padding-left: 580px;
+		}
+		.total{
+			position:absolute;
+			right: 620px;
+			width: 580px;
+			text-align: right;
+			height: 100%;
+			line-height: 55px;
+		}
+		.tiao-box{
+			width: 205px;
+			height: 20px;
+			position:relative;
+			padding-right:50px;
+			left: -80px;
+			.bg{
+				background:#444444;
+				height: 100%;
+			}
+			.mask{
+				position:absolute;
+				top:0;
+				height: 20px;
+				background:#89c997;
+				color:#fff;
+				text-align: center;
+				overflow: hidden;
+				line-height: 20px;
+				font-size: 12px;
+				transition: width .25s ease-in-out;
+				width: 0;
+			}
+			.top{
+				position: absolute;
+				top:0;
+				left: 0;
+			}
+			.right{
+				position:absolute;
+				height: 20px;
+				line-height: 20px;
+				right: 0;
+				top: 0;
+				font-size: 14px;
+			}
+		}
+	}
+}

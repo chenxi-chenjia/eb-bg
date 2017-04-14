@@ -183,4 +183,30 @@ $(function(){
 	if($('#baseCPU').length>0){
 		cpustate();
 	}
+	//虚拟主机信息
+	function virtual_information(){
+		var obj=$('.tiao-box');
+		var mw=parseInt(obj.find('.top').text())*obj.find('.bg').width()/100;
+		obj.find('.mask').css('width',mw+'px');
+		var num=0;
+		var max=parseInt(obj.find('.mask').text());
+		obj.find('.mask').text(num+'M');
+		var maxnum=parseInt(obj.find('.top').text())*parseInt(obj.find('.right').text())/100;
+		maxnum=Math.ceil(maxnum);
+		var time=250/maxnum;
+		function move(){
+			if(num>=max){
+				clearInterval(t);
+				obj.find('.mask').text(maxnum+'M');
+				return;
+			}
+			
+			obj.find('.mask').text(num+'M');
+			num+=1;
+		}
+		var t=setInterval(move,time);
+	}
+	if($('#virtual-information').length>0){
+		virtual_information();
+	}
 })

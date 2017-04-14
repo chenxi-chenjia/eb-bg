@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>虚拟主机管理中心-设置首页</title>
+	<title>虚拟主机管理中心-设置执行权限</title>
 	<link rel="stylesheet" href="../../../static/css/public.css">
 	<link rel="stylesheet" href="../../../static/css/respective.css">
 	<script src="../../../static/js/jquery.min.js"></script>
 </head>
 <body>
-	<div id="sethome" class="samepage virtual">
+	<div id="virtual-setexecute" class="samepage virtual">
 		<div class="center">
 			<div class="title">
 				<h1>虚拟主机管理中心</h1>
@@ -17,13 +17,13 @@
 				<a href="../virtual-information.html" class="nav-row4">
 					<span>虚拟主机信息<i class="icon n1"></i></span>
 				</a>
-				<a href="./virtual-base.html" class="nav-row4 now" >
+				<a href="../basefunction/virtual-base.html" class="nav-row4" >
 					<span>网站基础功能<i class="icon n2"></i></span>
 				</a>
 				<a href="../website/virtual-websiteAdvanced.html" class="nav-row4" >
 					<span>网站高级功能<i class="icon n3"></i></span>
 				</a>
-				<a href="../other/virtual-other.html" class="nav-row4" >
+				<a href="./virtual-other.html" class="nav-row4 now" >
 					<span>网站其他管理<i class="icon n4"></i></span>
 				</a>
 			</div>
@@ -33,34 +33,20 @@
 					<span>您好，欢迎登录虚拟主机管理中心</span>
 					<a href="#" class="exit">安全退出<i class="icon"></i></a>
 				</div>
-				<h2>基础功能 <span class="icon"></span> 设置首页</h2>
+				<h2>其他管理 <span class="icon"></span> 设置执行权限</h2>
 				<div class="content-body">
-					<div class="form">
-						<ul class="top no-float">
-							<li class="row1">序号</li>
-							<li class="row2">默认首页</li>
-							<li class="row3">操作</li>
-						</ul>
-						<div class="ym ">
-							
-						</div>
-						<ul class="add no-float">
-							<li class="row1"></li>
-							<li class="row2">
-								<input type="text" placeholder="请输入默认首页">
-							</li>
-							<li class="row3">
-								<a href="javascript:;">添加</a>
-							</li>
-						</ul>
+					<div class="lis">
+						请输入设置的目录名称：
+						<input type="text" placeholder="请输入目录名称">
+					</div>
+					<div class="button">
+						<a href="#">恢复执行权限</a>
+						<a href="#">取消执行权限</a>
 					</div>
 					<div class="content-ts">
 						<h3>温馨提示：</h3>
-						<p><span>[1]</span>默认首页是指网站目录下多个网页中，浏览者首先访问到的网页；</p>
-						<p><span>[2]</span>请避免同一目录下出现两个以上已添加的默认首页；</p>
-						<p><span>[3]</span>修改完结请点击"保存"；</p>
-						<p><span>[4]</span>最多可添加10个默认首页；</p>
-						<p><span>[5]</span>↓表示下移，↑表示上移；</p>
+						<p><span>[1]</span>统支持设置指定的目录取消ASP/PHP/CGI/ASP.Net权限。</p>
+						<p><span>[2]</span>对安全有重要意义，例如防止黑客上传ASP木马到图片或头像目录去运行</p>
 					</div>
 				</div>
 			</div>
@@ -71,4 +57,4 @@
 
 </body>
 </html>
-<script src="../../../static/js/public.js"></script>
+<script src="../../../static/js/public.js"></script>s
